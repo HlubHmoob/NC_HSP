@@ -22,6 +22,13 @@
     "gulp-sass": "^3.1.0"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0"
+    "animate": "^1.0.0",
+    "animate.css": "^3.6.1",
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "fontello": "^0.5.0",
+    "normalize.css": "^8.0.0",
+    "owl.carousel": "^2.2.0",
+    "pe7-icon": "^1.0.4"
   }
 }
