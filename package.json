@@ -29,6 +29,7 @@
     "fontello": "^0.5.0",
     "normalize.css": "^8.0.0",
     "owl.carousel": "^2.2.0",
-    "pe7-icon": "^1.0.4"
+    "pe7-icon": "^1.0.4",
+    "wowjs": "^1.1.3"
   }
 }
