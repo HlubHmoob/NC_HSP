@@ -186,6 +186,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\responsive.css" />
+    <Content Include="Content\css\styles.css" />
     <Content Include="Content\js\main.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -4215,10 +4216,6 @@
     <Content Include="node_modules\true-case-path\node_modules\glob\glob.js" />
     <Content Include="node_modules\true-case-path\node_modules\glob\sync.js" />
     <Content Include="node_modules\tunnel-agent\index.js" />
-    <Content Include="node_modules\tweetnacl\nacl-fast.js" />
-    <Content Include="node_modules\tweetnacl\nacl-fast.min.js" />
-    <Content Include="node_modules\tweetnacl\nacl.js" />
-    <Content Include="node_modules\tweetnacl\nacl.min.js" />
     <Content Include="node_modules\unc-path-regex\index.js" />
     <Content Include="node_modules\union-value\index.js" />
     <Content Include="node_modules\union-value\node_modules\extend-shallow\index.js" />
@@ -6470,13 +6467,6 @@
     <Content Include="node_modules\tunnel-agent\LICENSE" />
     <Content Include="node_modules\tunnel-agent\package.json" />
     <Content Include="node_modules\tunnel-agent\README.md" />
-    <Content Include="node_modules\tweetnacl\.npmignore" />
-    <Content Include="node_modules\tweetnacl\AUTHORS.md" />
-    <Content Include="node_modules\tweetnacl\CHANGELOG.md" />
-    <Content Include="node_modules\tweetnacl\LICENSE" />
-    <Content Include="node_modules\tweetnacl\package.json" />
-    <Content Include="node_modules\tweetnacl\PULL_REQUEST_TEMPLATE.md" />
-    <Content Include="node_modules\tweetnacl\README.md" />
     <Content Include="node_modules\unc-path-regex\LICENSE" />
     <Content Include="node_modules\unc-path-regex\package.json" />
     <Content Include="node_modules\unc-path-regex\README.md" />
@@ -6848,7 +6838,6 @@
     <TypeScriptCompile Include="node_modules\is-plain-object\index.d.ts" />
     <TypeScriptCompile Include="node_modules\isobject\index.d.ts" />
     <TypeScriptCompile Include="node_modules\mixin-deep\node_modules\is-extendable\index.d.ts" />
-    <TypeScriptCompile Include="node_modules\tweetnacl\nacl.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

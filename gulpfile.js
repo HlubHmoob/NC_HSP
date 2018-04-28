@@ -3,9 +3,9 @@
     minifyCSS = require('gulp-minify-css');
 
 gulp.task('sass', function () {
-    return gulp.src('./assets/sass/*.scss')
+    return gulp.src('./Content/scss/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('./assets/css'));
+        .pipe(gulp.dest('./Content/css'));
 });
 
 gulp.task('watch', function () {
@@ -18,4 +18,4 @@ gulp.task('minify-css', function () {
         .pipe(gulp.dest('./assets/minify-css'));
 });
 
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', ['sass', 'minify-css', 'watch']);
