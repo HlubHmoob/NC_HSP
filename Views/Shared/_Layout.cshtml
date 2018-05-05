@@ -66,31 +66,20 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse yamm" id="navigation">
-                <div class="button navbar-right">
-                    <button class="navbar-btn nav-button wow bounceInRight login" onclick=" window.open('register.html')" data-wow-delay="0.45s">Login</button>
-                    <button class="navbar-btn nav-button wow fadeInRight" onclick=" window.open('submit-property.html')" data-wow-delay="0.48s">Submit</button>
-                </div>
+             
+                    @Html.Partial("_LoginPartial")
+                    @*<button class="navbar-btn nav-button wow bounceInRight login" onclick=" window.open('register.html')" data-wow-delay="0.45s">Login</button>
+                    <button class="navbar-btn nav-button wow fadeInRight" onclick=" window.open('submit-property.html')" data-wow-delay="0.48s">Submit</button>*@
+               
                 <ul class="main-nav nav navbar-nav navbar-right">
-                    <li class="dropdown ymm-sw " data-wow-delay="0.1s">
-                        <a href="index.html" class="dropdown-toggle active" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Home <b class="caret"></b></a>
-                        <ul class="dropdown-menu navbar-nav">
-                            <li>
-                                <a href="index-2.html">Home Style 2</a>
-                            </li>
-                            <li>
-                                <a href="index-3.html">Home Style 3</a>
-                            </li>
-                            <li>
-                                <a href="index-4.html">Home Style 4</a>
-                            </li>
-                            <li>
-                                <a href="index-5.html">Home Style 5</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="wow fadeInDown" data-wow-delay="0.2s"><a class="" href="properties.html">Properties</a></li>
-                    <li class="wow fadeInDown" data-wow-delay="0.3s"><a class="" href="property.html">Property</a></li>
-                    <li class="dropdown yamm-fw" data-wow-delay="0.4s">
+                    <li class="wow fadeInDown" data-wow-delay="0.2s"><a class="active" href="properties.html">Home</a></li>
+                    <li class="wow fadeInDown" data-wow-delay="0.2s"><a class="" href="properties.html">About</a></li>
+                    <li class="wow fadeInDown" data-wow-delay="0.3s"><a class="" href="property.html">Officers</a></li>
+                    <li class="wow fadeInDown" data-wow-delay="0.3s"><a class="" href="property.html">Staffs</a></li>
+                    <li class="wow fadeInDown" data-wow-delay="0.3s"><a class="" href="property.html">Sports</a></li>
+                    <li class="wow fadeInDown" data-wow-delay="0.3s"><a class="" href="property.html">Projects</a></li>
+                    <li class="wow fadeInDown" data-wow-delay="0.3s"><a class="" href="property.html">Contact</a></li>
+                    @*<li class="dropdown yamm-fw" data-wow-delay="0.4s">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Template <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
@@ -162,11 +151,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- /.yamm-content -->
+                                 /.yamm-content 
                             </li>
                         </ul>
-                    </li>
-                    <li class="wow fadeInDown" data-wow-delay="0.5s"><a href="contact.html">Contact</a></li>
+                    </li>*@
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->

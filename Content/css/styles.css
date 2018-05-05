@@ -1197,7 +1197,7 @@ label small {
   padding-left: 20px; }
 
 .navbar-nav.navbar-right:last-child {
-  margin-right: 20px; }
+  margin-right: 20px !important; }
 
 .main-nav {
   padding-top: 10px; }

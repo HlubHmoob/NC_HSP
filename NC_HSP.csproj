@@ -590,8 +590,6 @@
     <Content Include="node_modules\expand-brackets\node_modules\is-descriptor\index.js" />
     <Content Include="node_modules\expand-brackets\node_modules\kind-of\index.js" />
     <Content Include="node_modules\expand-tilde\index.js" />
-    <Content Include="node_modules\extend-shallow\index.js" />
-    <Content Include="node_modules\extend-shallow\node_modules\is-extendable\index.js" />
     <Content Include="node_modules\extend\index.js" />
     <Content Include="node_modules\extglob\index.js" />
     <Content Include="node_modules\extglob\lib\compilers.js" />
@@ -802,12 +800,6 @@
     <Content Include="node_modules\gulp\index.js" />
     <Content Include="node_modules\gulp\lib\completion.js" />
     <Content Include="node_modules\gulp\lib\taskTree.js" />
-    <Content Include="node_modules\har-validator\lib\async.js" />
-    <Content Include="node_modules\har-validator\lib\error.js" />
-    <Content Include="node_modules\har-validator\lib\index.js" />
-    <Content Include="node_modules\har-validator\lib\runner.js" />
-    <Content Include="node_modules\har-validator\lib\schemas\index.js" />
-    <Content Include="node_modules\har-validator\node_modules\commander\index.js" />
     <Content Include="node_modules\has-ansi\index.js" />
     <Content Include="node_modules\has-gulplog\index.js" />
     <Content Include="node_modules\has-unicode\index.js" />
@@ -890,7 +882,6 @@
     <Content Include="node_modules\is-number\node_modules\kind-of\index.js" />
     <Content Include="node_modules\is-odd\index.js" />
     <Content Include="node_modules\is-odd\node_modules\is-number\index.js" />
-    <Content Include="node_modules\is-plain-object\index.js" />
     <Content Include="node_modules\is-property\is-property.js" />
     <Content Include="node_modules\is-relative\index.js" />
     <Content Include="node_modules\is-typedarray\index.js" />
@@ -904,7 +895,6 @@
     <Content Include="node_modules\isexe\mode.js" />
     <Content Include="node_modules\isexe\test\basic.js" />
     <Content Include="node_modules\isexe\windows.js" />
-    <Content Include="node_modules\isobject\index.js" />
     <Content Include="node_modules\isstream\isstream.js" />
     <Content Include="node_modules\isstream\test.js" />
     <Content Include="node_modules\js-base64\1x1.png" />
@@ -1030,8 +1020,6 @@
     <Content Include="node_modules\minimist\test\stop_early.js" />
     <Content Include="node_modules\minimist\test\unknown.js" />
     <Content Include="node_modules\minimist\test\whitespace.js" />
-    <Content Include="node_modules\mixin-deep\index.js" />
-    <Content Include="node_modules\mixin-deep\node_modules\is-extendable\index.js" />
     <Content Include="node_modules\mkdirp\bin\cmd.js" />
     <Content Include="node_modules\mkdirp\bin\usage.txt" />
     <Content Include="node_modules\mkdirp\examples\pow.js" />
@@ -4956,12 +4944,6 @@
     <Content Include="node_modules\expand-tilde\LICENSE" />
     <Content Include="node_modules\expand-tilde\package.json" />
     <Content Include="node_modules\expand-tilde\README.md" />
-    <Content Include="node_modules\extend-shallow\LICENSE" />
-    <Content Include="node_modules\extend-shallow\node_modules\is-extendable\LICENSE" />
-    <Content Include="node_modules\extend-shallow\node_modules\is-extendable\package.json" />
-    <Content Include="node_modules\extend-shallow\node_modules\is-extendable\README.md" />
-    <Content Include="node_modules\extend-shallow\package.json" />
-    <Content Include="node_modules\extend-shallow\README.md" />
     <Content Include="node_modules\extend\.eslintrc" />
     <Content Include="node_modules\extend\.jscs.json" />
     <Content Include="node_modules\extend\.npmignore" />
@@ -5189,29 +5171,6 @@
     <Content Include="node_modules\gulp\LICENSE" />
     <Content Include="node_modules\gulp\package.json" />
     <Content Include="node_modules\gulp\README.md" />
-    <Content Include="node_modules\har-validator\bin\har-validator" />
-    <Content Include="node_modules\har-validator\lib\schemas\cache.json" />
-    <Content Include="node_modules\har-validator\lib\schemas\cacheEntry.json" />
-    <Content Include="node_modules\har-validator\lib\schemas\content.json" />
-    <Content Include="node_modules\har-validator\lib\schemas\cookie.json" />
-    <Content Include="node_modules\har-validator\lib\schemas\creator.json" />
-    <Content Include="node_modules\har-validator\lib\schemas\entry.json" />
-    <Content Include="node_modules\har-validator\lib\schemas\har.json" />
-    <Content Include="node_modules\har-validator\lib\schemas\log.json" />
-    <Content Include="node_modules\har-validator\lib\schemas\page.json" />
-    <Content Include="node_modules\har-validator\lib\schemas\pageTimings.json" />
-    <Content Include="node_modules\har-validator\lib\schemas\postData.json" />
-    <Content Include="node_modules\har-validator\lib\schemas\record.json" />
-    <Content Include="node_modules\har-validator\lib\schemas\request.json" />
-    <Content Include="node_modules\har-validator\lib\schemas\response.json" />
-    <Content Include="node_modules\har-validator\lib\schemas\timings.json" />
-    <Content Include="node_modules\har-validator\LICENSE" />
-    <Content Include="node_modules\har-validator\node_modules\commander\CHANGELOG.md" />
-    <Content Include="node_modules\har-validator\node_modules\commander\LICENSE" />
-    <Content Include="node_modules\har-validator\node_modules\commander\package.json" />
-    <Content Include="node_modules\har-validator\node_modules\commander\Readme.md" />
-    <Content Include="node_modules\har-validator\package.json" />
-    <Content Include="node_modules\har-validator\README.md" />
     <Content Include="node_modules\has-ansi\license" />
     <Content Include="node_modules\has-ansi\package.json" />
     <Content Include="node_modules\has-ansi\readme.md" />
@@ -5374,9 +5333,6 @@
     <Content Include="node_modules\is-odd\node_modules\is-number\README.md" />
     <Content Include="node_modules\is-odd\package.json" />
     <Content Include="node_modules\is-odd\README.md" />
-    <Content Include="node_modules\is-plain-object\LICENSE" />
-    <Content Include="node_modules\is-plain-object\package.json" />
-    <Content Include="node_modules\is-plain-object\README.md" />
     <Content Include="node_modules\is-property\.npmignore" />
     <Content Include="node_modules\is-property\LICENSE" />
     <Content Include="node_modules\is-property\package.json" />
@@ -5403,9 +5359,6 @@
     <Content Include="node_modules\isexe\LICENSE" />
     <Content Include="node_modules\isexe\package.json" />
     <Content Include="node_modules\isexe\README.md" />
-    <Content Include="node_modules\isobject\LICENSE" />
-    <Content Include="node_modules\isobject\package.json" />
-    <Content Include="node_modules\isobject\README.md" />
     <Content Include="node_modules\isstream\.jshintrc" />
     <Content Include="node_modules\isstream\.npmignore" />
     <Content Include="node_modules\isstream\.travis.yml" />
@@ -5595,12 +5548,6 @@
     <Content Include="node_modules\minimist\LICENSE" />
     <Content Include="node_modules\minimist\package.json" />
     <Content Include="node_modules\minimist\readme.markdown" />
-    <Content Include="node_modules\mixin-deep\LICENSE" />
-    <Content Include="node_modules\mixin-deep\node_modules\is-extendable\LICENSE" />
-    <Content Include="node_modules\mixin-deep\node_modules\is-extendable\package.json" />
-    <Content Include="node_modules\mixin-deep\node_modules\is-extendable\README.md" />
-    <Content Include="node_modules\mixin-deep\package.json" />
-    <Content Include="node_modules\mixin-deep\README.md" />
     <Content Include="node_modules\mkdirp\.travis.yml" />
     <Content Include="node_modules\mkdirp\LICENSE" />
     <Content Include="node_modules\mkdirp\node_modules\minimist\.travis.yml" />
@@ -6831,13 +6778,6 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <TypeScriptCompile Include="node_modules\extend-shallow\node_modules\is-extendable\index.d.ts" />
-    <TypeScriptCompile Include="node_modules\har-validator\node_modules\commander\typings\index.d.ts" />
-    <TypeScriptCompile Include="node_modules\is-plain-object\index.d.ts" />
-    <TypeScriptCompile Include="node_modules\isobject\index.d.ts" />
-    <TypeScriptCompile Include="node_modules\mixin-deep\node_modules\is-extendable\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
