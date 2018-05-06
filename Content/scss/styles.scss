@@ -2,13 +2,13 @@
 $color_tapa_approx: #777;
 $white: #fff;
 $color_mountain_mist_approx: #999999;
-$color_meteor_approx: #d27e04;
+$color_meteor_approx: #9e722a;
 $color_log_cabin_approx: #1f2222;
 $color_mine_shaft_approx: #333333;
 $black_0: rgba(0,0,0,.0);
 $color_dodger_blue_approx: #2ca8ff;
 $color_forest_green_approx: #05ae0e;
-$color_supernova_approx: #fdc600;
+$color_supernova_approx: #9e722a;
 $color_red_orange_approx: #ff3b30;
 $color_blue_ribbon_approx: #1d62f0;
 $color_tangerine_approx: #ed8d00;
@@ -1952,6 +1952,7 @@ label {
 	}
 	&:hover {
 		background-color: $color_supernova_approx;
+        color: $white;
 	}
 }
 .yamm {
