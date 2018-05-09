@@ -21,7 +21,7 @@ namespace NC_HSP.Models
         public bool PostItem(PostsViewModels iPost)
         {
             connection();
-            string query = "INSERT INTO POSTS VALUES('" + iPost.CreationDate + "','" + iPost.Title + "','" + iPost.BodyText + "','" + iPost.MediaUrl + ")";
+            string query = "INSERT INTO Posts VALUES('" + iPost.CreationDate + "','" + iPost.Title + "','" + iPost.BodyText + "'," + iPost.MediaUrl + ")";
             SqlCommand cmd = new SqlCommand(query, con);
             con.Open();
             int i = cmd.ExecuteNonQuery();
