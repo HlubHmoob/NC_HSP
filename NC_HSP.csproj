@@ -176,6 +176,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -191,6 +192,8 @@
     <Content Include="Content\css\responsive.css" />
     <Content Include="Content\css\styles.css" />
     <Content Include="Content\img\president2018.jpg" />
+    <Content Include="Content\js\gmaps.init.js" />
+    <Content Include="Content\js\gmaps.js" />
     <Content Include="Content\js\main.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />

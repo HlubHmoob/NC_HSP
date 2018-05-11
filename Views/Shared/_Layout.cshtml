@@ -30,8 +30,8 @@
                 <div class="col-md-5 col-sm-8  col-xs-12">
                     <div class="header-half header-call">
                         <p>
-                            <span><i class="pe-7s-call"></i> +1 234 567 7890</span>
-                            <span><i class="pe-7s-mail"></i> your@company.com</span>
+                            @*<span><i class="pe-7s-call"></i> +1 234 567 7890</span>*@
+                            <span><i class="pe-7s-mail"></i> Info@Hmongsoutheastpuavpheej.org</span>
                         </p>
                     </div>
                 </div>
@@ -72,8 +72,8 @@
                     <button class="navbar-btn nav-button wow fadeInRight" onclick=" window.open('submit-property.html')" data-wow-delay="0.48s">Submit</button>*@
                
                 <ul class="main-nav nav navbar-nav navbar-right">
-                    <li class="wow fadeInDown" data-wow-delay="0.2s">@Html.ActionLink("Home", "Index", "Home", new { @class = "active"})</li>
-                    <li class="wow fadeInDown" data-wow-delay="0.2s">@Html.ActionLink("About", "About", "Home")</li>
+                    <li class="wow fadeInDown" data-wow-delay="0.2s">@Html.ActionLink("Home", "Index", "Home", new { @class = ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "" })</li>
+                    <li class="wow fadeInDown" data-wow-delay="0.2s">@Html.ActionLink("About", "About", "Home", new { @class = ViewContext.RouteData.Values["Action"].ToString() == "About" ? "active" : "" })</li>
                     <li class="wow fadeInDown" data-wow-delay="0.3s"><a class="" href="property.html">Officers</a></li>
                     <li class="wow fadeInDown" data-wow-delay="0.3s"><a class="" href="property.html">Staffs</a></li>
                     <li class="wow fadeInDown" data-wow-delay="0.3s"><a class="" href="property.html">Sports</a></li>
@@ -229,6 +229,9 @@
     @Scripts.Render("~/bundles/bootstrap")
     <script src="~/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
     <script src="~/node_modules/wowjs/dist/wow.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <script src="~/Content/js/gmaps.js"></script>
+    <script src="~/Content/js/gmaps.init.js"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>
