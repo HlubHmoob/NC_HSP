@@ -1,0 +1,36 @@
+{
+  "name": "nc_hsp",
+  "version": "1.0.0",
+  "description": "hmong nc page",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HlubHmoob/NC_HSP.git"
+  },
+  "author": "Hmong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HlubHmoob/NC_HSP/issues"
+  },
+  "homepage": "https://github.com/HlubHmoob/NC_HSP#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "animate": "^1.0.0",
+    "animate.css": "^3.6.1",
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "fontello": "^0.5.0",
+    "gmaps": "^0.4.24",
+    "normalize.css": "^8.0.0",
+    "owl.carousel": "^2.2.0",
+    "pe7-icon": "^1.0.4",
+    "wowjs": "^1.1.3"
+  }
+}
