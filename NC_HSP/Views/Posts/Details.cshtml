@@ -1,7 +1,13 @@
-﻿@model NC_HSP.Models.PostsViewModels
+﻿@model NC_HSP.Models.Post
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
 
 <div>
-    <h4>PostsViewModels</h4>
+    <h4>Post</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -10,6 +16,14 @@
 
         <dd>
             @Html.DisplayFor(model => model.CreationDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdateDate)
         </dd>
 
         <dt>

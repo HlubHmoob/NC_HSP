@@ -5,6 +5,20 @@
 <div class="content-area blog-page padding-top-40" style="background-color: #FCFCFC; padding-bottom: 55px;">
     <div class="container">
         <div class="row">
+
+            @*@if (User.IsInRole("Admin"))
+            {*@
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p>
+                                @Html.ActionLink("Create New", "Create", "Posts")
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            @*}*@
             <div class="blog-lst col-md-9 p0">
                 <section id="id-100" class="post single">
                     <div class="post-header single">
@@ -38,7 +52,7 @@
                         </ul>
                     </div>
                 </section>
-                
+
             </div>
 
             <div class="blog-asside-right col-md-3">
@@ -103,7 +117,7 @@
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <!--/ End President Message-->
                 <div class="panel panel-default sidebar-menu wow fadeInRight animated">
                     <div class="panel-heading">

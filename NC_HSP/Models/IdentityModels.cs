@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using System.Collections.Generic;
+using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
@@ -9,6 +10,16 @@ namespace NC_HSP.Models
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
     {
+
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string DisplayName { get; set; }
+
+        public ApplicationUser()
+        {
+            this.PostComments = new HashSet<Comment>();
+        }
+
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
@@ -16,6 +27,7 @@ namespace NC_HSP.Models
             // Add custom user claims here
             return userIdentity;
         }
+        public virtual ICollection<Comment> PostComments { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -29,5 +41,8 @@ namespace NC_HSP.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<NC_HSP.Models.Post> Posts { get; set; }
+        public System.Data.Entity.DbSet<NC_HSP.Models.Comment> Comments { get; set; }
     }
 }
