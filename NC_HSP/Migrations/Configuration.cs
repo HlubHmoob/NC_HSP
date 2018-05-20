@@ -28,7 +28,22 @@ namespace NC_HSP.Migrations
             var uStore = new UserStore<ApplicationUser>(context);
             var userManager = new UserManager<ApplicationUser>(uStore);
 
-
+            if (userManager.FindByEmail("admin@hsp.com") == null)
+            {
+                userManager.Create(new ApplicationUser
+                {
+                    UserName = "admin@hsp.com",
+                    Email = "admin@hsp.co",
+                    FirstName = "Admin",
+                    LastName = ""
+                }, "Password-1");
+            }
+            //assign me to the Admin role, if not already in it
+            var userId = userManager.FindByEmail("admin@hsp.com").Id;
+            if (!userManager.IsInRole(userId, "Admin"))
+            {
+                userManager.AddToRole(userId, "Admin");
+            }
 
         }
     }
