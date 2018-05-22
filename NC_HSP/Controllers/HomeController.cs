@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NC_HSP.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,8 +9,37 @@ namespace NC_HSP.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        private ApplicationDbContext db = new ApplicationDbContext();
+
+        public ActionResult Index(string currentFilter, string searchString, int? page)
         {
+
+            if (searchString != null)
+            {
+                page = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            var postList = from s in db.Posts
+                           select s;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                postList = postList.Where(s => s.Title.Contains(searchString)
+                                       || s.BodyText.Contains(searchString)
+                                       || s.Comments.Any(c => c.BodyText.Contains(searchString))
+                                       || s.Comments.Any(c => c.Author.UserName.Contains(searchString)));
+            }
+            else
+            {
+                Console.WriteLine("No results");
+            }
+
+            ViewBag.CurrentFilter = searchString;
+
             return View();
         }
 

@@ -1,4 +1,7 @@
-﻿@{
+﻿@model PagedList.IPagedList<NC_HSP.Models.Post>
+
+@using PagedList.Mvc;
+@{
     ViewBag.Title = "Home";
 }
 
@@ -6,19 +9,19 @@
     <div class="container">
         <div class="row">
 
-            @*@if (User.IsInRole("Admin"))
-            {*@
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <p>
-                                @Html.ActionLink("Create New", "Create", "Posts")
-                            </p>
-                        </div>
-
+            @if (User.IsInRole("Admin"))
+                {
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <p>
+                            @Html.ActionLink("Create New", "Create", "Posts")
+                        </p>
                     </div>
+
                 </div>
-            @*}*@
+            </div>
+            }
             <div class="blog-lst col-md-9 p0">
                 <section id="id-100" class="post single">
                     <div class="post-header single">

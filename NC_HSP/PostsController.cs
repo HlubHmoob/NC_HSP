@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -36,6 +37,7 @@ namespace NC_HSP
         }
 
         // GET: Posts/Create
+        [Authorize(Roles = "Admin")]
         public ActionResult Create()
         {
             return View();
@@ -46,13 +48,30 @@ namespace NC_HSP
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,CreationDate,UpdateDate,Title,BodyText,MediaUrl")] Post post)
+        [Authorize(Roles = "Admin")]
+        public ActionResult Create(Post post, HttpPostedFileBase fileUpload)
         {
+            DateTime timeUtc = DateTime.UtcNow;
+            TimeZoneInfo kstZone = TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time");
+            DateTime kstTime = TimeZoneInfo.ConvertTimeFromUtc(timeUtc, kstZone);
+
+            post.CreationDate = kstTime;
+
             if (ModelState.IsValid)
             {
+                if (Post.ImageUploadValidator.IsWebFriendlyImage(fileUpload))
+                {
+                    var fileName = Path.GetFileName(fileUpload.FileName);
+                    fileUpload.SaveAs(Path.Combine(Server.MapPath("~/Content/img/post/"), fileName));
+                    post.MediaUrl = "~/Content/img/post/" + fileName;
+
+                }
+
+                post.CreationDate = kstTime;
+
                 db.Posts.Add(post);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Home");
             }
 
             return View(post);

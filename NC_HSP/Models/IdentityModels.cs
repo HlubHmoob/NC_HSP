@@ -42,7 +42,7 @@ namespace NC_HSP.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<NC_HSP.Models.Post> Posts { get; set; }
-        public System.Data.Entity.DbSet<NC_HSP.Models.Comment> Comments { get; set; }
+        public DbSet<Post> Posts { get; set; }
+        public DbSet<Comment> Comments { get; set; }
     }
 }
